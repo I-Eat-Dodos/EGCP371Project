@@ -7,6 +7,8 @@ clear all;
 % Read a signal from an audio file
 [y,Fs] = audioread('audiotesting.wav');
 info = audioinfo('audiotesting.wav');
+
+% Play the audio file
 sound(y,Fs);
 
 % Create a t vector that is as long as the duration of the audio file
